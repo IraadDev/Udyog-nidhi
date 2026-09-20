@@ -211,6 +211,15 @@ details p{color:var(--muted);margin-bottom:20px}
 }
 
 /* ===== UI ENHANCEMENTS: motion, hover, polish ===== */
+
+/* Cursors: anything clickable says so */
+a,button,summary,label,select,
+.menu,.to-top,.whatsapp,.nav a,.btn{cursor:pointer}
+select{cursor:pointer}
+input[type=submit],button[type=submit]{cursor:pointer}
+input,textarea{cursor:text}
+a:not([href]),button:disabled,input:disabled,select:disabled,textarea:disabled{cursor:not-allowed}
+
 :root{
   --ease:cubic-bezier(.22,1,.36,1);
   --ring:0 0 0 4px rgba(31,93,188,.16);
